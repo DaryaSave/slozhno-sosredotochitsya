@@ -38,18 +38,24 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
+
   background-image: var(--header-bg-image); 
+
   background-position: center; 
+  
   background-size: cover; 
   background-repeat: no-repeat; 
+
 }
 
 .accent-shadow-text {
+  font-size: 116px;
   font-weight: 700;
-  line-height: 82.5%;
+  line-height: 95.7px;
+  justify-self: flex-start;
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--main-title-text-color, #db00ff);
-}
+  }  
 
 .title-style {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -139,14 +145,6 @@
   height: 25px;
   border-bottom: 1px solid var(--decor-color, #ff0070);
   border-left: 1px solid var(--decor-color, #ff0070);
-}
-
-.accent-shadow-text {
-text-shadow: 4px 4px #FF0070;
-font-size: 116px;
-font-weight: 700;
-line-height: 95.7px;
-justify-self: flex-start;
 }
 
 .title-decor {
@@ -366,6 +364,7 @@ p {
   .accent-shadow-text {
     font-size: 157px;
     line-height: 129.53px;
+    text-shadow: 4px 4px 0 #FF0070;
   }
 
   .header__theme-menu-list {
@@ -384,4 +383,7 @@ p {
   .section__reasons-card-set .section__card {
     grid-template-rows: 23px auto;
   }
+}
+.title-style {
+  text-shadow: 2px 2px var(--accent-color);
 }
