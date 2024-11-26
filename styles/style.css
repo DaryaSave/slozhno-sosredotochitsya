@@ -23,6 +23,7 @@
   display: grid;
   align-items: center;
   margin: 0 auto;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: var(--main-font, IBM Plex Mono, sans-serif);
   font-size: var(--main-font-size, 18px);
