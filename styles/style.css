@@ -44,20 +44,23 @@
   background-repeat: no-repeat; 
 }
 
-.title-style .accent-shadow-text {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+.accent-shadow-text {
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--main-title-text-color, #db00ff);
 }
 
+.title-style {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+ }
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 10px;
-  color: var(--decor-color, #ff0070);
+  color: var(--decor-color);
 }
 
 .header__theme-menu-button {
@@ -112,13 +115,10 @@
   filter: drop-shadow(0px 0px 4px var(--accent-color, #ff0070));
 }
 
-/*.decorated-zone {
+.decorated-zone {
   position: relative;
-  background-image: var(--header-bg-image);
-  background-size: cover;
-  background-repeat: no-repeat; 
 }
-*/
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -143,9 +143,9 @@
 
 .accent-shadow-text {
 text-shadow: 4px 4px #FF0070;
-font-size: 157px;
+font-size: 116px;
 font-weight: 700;
-line-height: 129.53px;
+line-height: 95.7px;
 justify-self: flex-start;
 }
 
@@ -238,7 +238,7 @@ p {
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
 }
 
-/*ПЛАНШЕТ*/
+/*Tablet*/
 
 @media (min-width: 768px) {
   .header {
@@ -261,13 +261,18 @@ p {
     left: 20px;
   }
 
+  .accent-shadow-text {
+    font-size: 120px;
+    line-height: 99px;
+  }
+
   .header__title {
     margin-inline-start: -20px;
     justify-self: start;
   }
 
   .title-style {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__description-text {
@@ -346,12 +351,21 @@ p {
   }
 }
 
-/*ДЕСКТОП*/
+/*Desktop*/
 
 @media (min-width: 1024px) {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+  }
+
+  .decorated-zone {
+    padding-left: 0px;
+  }
+
+  .accent-shadow-text {
+    font-size: 157px;
+    line-height: 129.53px;
   }
 
   .header__theme-menu-list {
@@ -360,7 +374,7 @@ p {
 
   .section__why-difficult,
   .section__how-to-concentrate {
-    grid-template-columns: 1fr 2.06fr; /* 649(ширина второй колонки) / 315(ширина первой колонки)=2.06 */
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .section__reasons-card-set {

@@ -44,7 +44,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
-    --main-text-color: #FFC2E6;
+    --main-text-color:#353430;
     --accent-color: #ff8dcb;
     --decor-color: #353430;
     --main-title-text-color: #ffc2e6;
