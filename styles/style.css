@@ -42,7 +42,7 @@
   background-image: var(--header-bg-image); 
 
   background-position: center; 
-  
+
   background-size: cover; 
   background-repeat: no-repeat; 
 
@@ -188,6 +188,7 @@ p {
   font-weight: 700;
   line-height: 23.4px;
   color: var(--decor-color, #ff0070);
+  margin: 0px 4px 0px 0px;
 }
 
 .title-normal-font-weight {
@@ -262,6 +263,11 @@ p {
   .accent-shadow-text {
     font-size: 120px;
     line-height: 99px;
+  }
+  
+  .header__text {
+    width: 364px;
+    min-height: 117px;
   }
 
   .header__title {
@@ -362,9 +368,15 @@ p {
   }
 
   .accent-shadow-text {
+    padding-left: 5px;
     font-size: 157px;
     line-height: 129.53px;
     text-shadow: 4px 4px 0 #FF0070;
+  }
+
+  .header__text {
+    width: 491px;
+    min-height: 71px;
   }
 
   .header__theme-menu-list {
