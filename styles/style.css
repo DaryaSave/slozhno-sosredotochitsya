@@ -38,10 +38,11 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  background-image: var(--header-bg-image); 
-  background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
+  background-image: var(--header-bg-image); 
+  background-position: center; 
+
 }
 
 .accent-shadow-text {
