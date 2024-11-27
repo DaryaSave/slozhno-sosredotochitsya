@@ -30,7 +30,7 @@
   color: var(--main-title-text-color, #f1b2ce);
   background-color: var(--bg-color, #000028);
   line-height: 23.4px;
-}
+ }
 
 .header {
   min-block-size: 100vh;
@@ -38,12 +38,11 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-image: var(--header-bg-image); 
-  background-position: center; 
-
-}
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: var(--header-bg-image);
+  background-position: center;
+ }
 
 .accent-shadow-text {
   font-size: 116px;
