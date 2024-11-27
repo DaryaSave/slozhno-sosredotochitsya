@@ -1,22 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --accent-color: #ff0070;
-  --accent-color-with-background: #000028;
-  --accent-heading-color: #db00ff;
-  --main-text-color: #f1b2ce;
-  --heading-color: #ff0070;
-  --button-hover-color: #ff007066;
-  --decorative-bracket-color: #ff0070;
-  --menu-color: #ff0070;
-  --headers-color: #ff0070;
-  --rec-decoration-color: #ff0070;
-  --cover-image: url(../images/cover-image-dark.png);
-  --gap: 20px;
-  --main-font: "IBM Plex mono";
-  --accent-heading-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --bold: 700;
-}
 
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   .page {
@@ -25,7 +7,7 @@
   margin: 0 auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: var(--main-font, IBM Plex Mono, sans-serif);
+  font-family: var(--main-font);
   font-size: var(--main-font-size, 18px);
   color: var(--main-title-text-color, #f1b2ce);
   background-color: var(--bg-color, #000028);
@@ -56,9 +38,11 @@
 .title-style {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 2px 2px var(--accent-color);
+  Line-height: 129.53px;
  }
 
 .header__theme-menu-list {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -83,8 +67,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
-  /*outline: 1px solid var(--btn-hover-color, rgba(255, 0, 112, 0.4));*/
+  outline: 1px solid var(--btn-hover-color, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus {
@@ -107,6 +90,10 @@
   text-align: center;
   text-transform: uppercase;
   line-height: 25px;
+}
+
+.header__decoration__rec {
+  visibility: hidden;
 }
 
 .header__decoration__rec::after {
@@ -148,7 +135,7 @@
   background-color: var(--accent-color, #ff0070);
   color: var(--subtitle-color, #000028);
   font-weight: 700;
-  font-family: var(--main-font, IBM Plex Mono, sans-serif);
+  font-family: var(--main-font);
   font-size: var(--main-font-size, 18px);
 }
 
@@ -277,10 +264,6 @@ p {
     justify-self: start;
   }
 
-  .title-style {
-   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .header__description-text {
     width: 50%;
   }
@@ -373,7 +356,7 @@ p {
     padding-left: 0px;
     font-size: 157px;
     line-height: 129.53px;
-    text-shadow: 4px 4px 0 #FF0070;
+    text-shadow: 4px 4px 0 var(--accent-color);
   }
 
   .header__text {
