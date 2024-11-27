@@ -211,6 +211,7 @@ p {
 }
 
 .gallery {
+  margin-right: 3.97px;
   display: grid;
   gap: 10px;
 }
@@ -238,9 +239,11 @@ p {
 /*Tablet*/
 
 @media (min-width: 768px) {
+
   .header {
     justify-items: end;
     padding: var(--padding-middle, 20px);
+    padding-left: 0px;
   }
 
   .header__decoration__rec {
@@ -259,6 +262,7 @@ p {
   }
 
   .accent-shadow-text {
+    margin-left: -10px;
     font-size: 120px;
     line-height: 99px;
   }
@@ -379,6 +383,10 @@ p {
 
   .header__theme-menu-list {
     flex-direction: row;
+  }
+
+  p {
+    margin-right: 0px;
   }
 
   .section__why-difficult,
