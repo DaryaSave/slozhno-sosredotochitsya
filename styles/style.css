@@ -27,7 +27,7 @@
  }
 
 .accent-shadow-text {
-  font-size: 116px;
+  font-size: var(--accent-heading-fs-mobile);
   font-weight: 700;
   line-height: 95.7px;
   justify-self: flex-start;
@@ -247,7 +247,7 @@ p {
 
   .accent-shadow-text {
     margin-left: -10px;
-    font-size: 120px;
+    font-size: var(--accent-heading-fs-desktop);
     line-height: 99px;
   }
   
@@ -351,7 +351,7 @@ p {
 
   .accent-shadow-text {
     padding-left: 0px;
-    font-size: 157px;
+    font-size: var(--accent-heading-fs-desktop);
     line-height: 129.53px;
     text-shadow: 4px 4px 0 var(--accent-color);
   }

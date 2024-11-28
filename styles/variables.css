@@ -10,22 +10,17 @@
   --main-title-text-color: #db00ff;
   --subtitle-color: #000028;
   --btn-hover-color:  #ff007066;
-  --main-font: IBM Plex Mono, sans-serif;
-  --main-font-size: 18px;
-  --padding: 10px;
   --header-bg-image: url(../images/cover-image-dark.png);
   --accent-heading-color: #db00ff;
   --heading-color: #ff0070;
   --menu-color: #ff0070;
   --headers-color: #ff0070;
   --rec-decoration-color: #ff0070;
+  --main-font: IBM Plex Mono, sans-serif;
+  --main-font-size: 18px;
+  --padding: 10px;
   --gap: 20px;
-  --main-font: "IBM Plex mono", Arial, sans-serif;
   --accent-heading-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --bold: 700;
-}
-
-.header__decoration__rec {
-  visibility: hidden;
 }
